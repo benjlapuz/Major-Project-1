@@ -1057,8 +1057,59 @@
                 </div>
                 </div>
               </div>
-    </div>
+            </div>
+          </div>
+      </div>
+<!------------------------------------------------------------------->
+      <!--Profile-->
+      <div class="container mt-3">
+        <form id="profile">
+          <label for="full-name" class="form-label">Full Name:</label>
+          <input type="text" class="form-control" placeholder="Enter Full Name"><br>
+          <label for="store-address" class="form-label">Store Address:</label>
+          <input type="text" class="form-control" placeholder="Enter Store Address"><br>
+          <label for="email" class="form-label">Email Address:</label>
+          <input type="text" class="form-control" placeholder="Enter Email Address"><br>
+          <div class="row">
+            <div class="col">
+              <label for="mobile" class="form-label">Mobile Number:</label>
+              <input type="text" class="form-control" placeholder="Enter Number">
+            </div>
+            <div class="col">
+              <label for="viber" class="form-label">Viber Number:</label>
+              <input type="text" class="form-control" placeholder="Enter Number">
+            </div>
+          </div><br>
+          <label for="messenger" class="form-label">Facebook Messenger Link:</label>
+          <input type="text" class="form-control" placeholder="Enter Link"><br>
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" class="form-control" placeholder="Enter Password" id="pswd">
+          <input type="checkbox" onclick="myFunction()">Show Password
+            <script>
+              function myFunction() {
+              var x = document.getElementById("pswd");
+              if (x.type === "password") {
+                  x.type = "text";
+                  } else {
+                  x.type = "password";
+                }
+              }
+            </script>
+          <br><br>
+          <input type="button" class="btn btn-primary btn-sm" onclick="myFunction()" value="Reset">
+          <script>
+            function myFunction() {
+              document.getElementById("profile").reset();
+            }
+          </script>
+          <input type="button" class="btn btn-danger btn-sm" onclick="myFunction()" value="Cancel">
+          <input type="button" class="btn btn-success btn-sm" onclick="myFunction()" value="Looking Good">
+        </form>
+      </div>
+<!------------------------------------------------------------------------->
+      <!--Seller's Forum-->
+            
+    </div>  
   </div>
-</div>
 </body>
 </html>
