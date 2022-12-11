@@ -15,6 +15,51 @@
 {
     background-image: linear-gradient(to right, white, royalblue);
 }
+#chat1, #chat3 {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+#chat2, #chat4 {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+#chat2, #chat4 {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+#chat1, #chat2, #chat3, #chat4::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#chat1 img, #chat3 img {
+  float:left;
+  max-width:60px;
+  width:100%;
+  margin-right:20px;
+  border-radius:50%;
+}
+#chat2 img, #chat4 img {
+  float:right;
+  max-width:60px;
+  width:100%
+  margin-left:20px;
+  margin-right:0;
+}
+.time-right {
+  float:right;
+  color: #aaa;
+}
+.time-left {
+  float: left;
+  color: #999;
+}
 </style>
 </head>
 <body>
@@ -27,7 +72,7 @@
 <br>
 <!--------------------------------------------------------->
   <div class="container-fluid">
-  <ul class="nav nav-tabs nav-justified">
+    <ul class="nav nav-tabs nav-justified">
       <li class="nav-item">
         <a class="nav-link active" data-bs-toggle="tab" href="#dashboard">My Dashboard</a>
       </li>
@@ -41,7 +86,7 @@
           <a class="nav-link" data-bs-toggle="tab" href="#myprofile">My Profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="tab" href="#">Seller's Forum</a>
+          <a class="nav-link" data-bs-toggle="tab" href="#forum">Seller's Forum</a>
         </li>
     </ul>
 <!---------------------------------------------------------->
@@ -591,8 +636,7 @@
                 <thead class="table-primary">
                 <tr>
                   <th>Item Description</th>
-                  <th>Number of Views</th>
-                  <th>Number of Orders</th>
+                  <th>Total On-Hand</th>
                   <th>Actions</th>
                 </tr>
                 </thead>
@@ -600,60 +644,65 @@
                 <tr>
                   <td><a href="#">25SQM Lot Area For Sale</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">20SQM Lot Area For Sale</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>                
                 </tr>
                 <tr>
                   <td><a href="#">45SQM House and Lot For Sale</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">15SQM Lot Area For Sale</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">42SQM House and Lot For Sale</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -670,8 +719,7 @@
                 <thead class="table-primary">
                 <tr>
                   <th>Item Description</th>
-                  <th>Number of Views</th>
-                  <th>Number of Orders</th>
+                  <th>Total On-Hand</th>
                   <th>Actions</th>
                 </tr>
                 </thead>
@@ -679,60 +727,65 @@
                 <tr>
                   <td><a href="#">Toyota Innova G</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Toyota Fortuner V</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">BMW 318i</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Hyundai Starex</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Nissan Almera</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -749,8 +802,7 @@
                 <thead class="table-primary">
                 <tr>
                   <th>Item Description</th>
-                  <th>Number of Views</th>
-                  <th>Number of Orders</th>
+                  <th>Total On-Hand</th>
                   <th>Actions</th>
                 </tr>
                 </thead>
@@ -758,60 +810,65 @@
                 <tr>
                   <td><a href="#">Brand New Dumpling Bag</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Pre-loved Zara Sandals</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Pre-loved Used Once Tory Burch Dress</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Used Once True Religion 20th Ricky Vintage</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Never Used Parfois Women's Long Basic Plain Purse</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -828,8 +885,7 @@
                 <thead class="table-primary">
                 <tr>
                   <th>Item Description</th>
-                  <th>Number of Views</th>
-                  <th>Number of Orders</th>
+                  <th>Total On-Hand</th>
                   <th>Actions</th>
                 </tr>
                 </thead>
@@ -837,60 +893,65 @@
                 <tr>
                   <td><a href="#">Nestogen 1.8kg</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
-                    <td><a href="#">Pedigree 25kg</a></td>
-                    <td><a href="#">#</a></td>
-                    <td><a href="#">#</a></td>
-                    <td>
-                      <div class="container-fluid">
-                        <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                        <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                        <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                  <td><a href="#">Pedigree 25kg</a></td>
+                  <td><a href="#">#</a></td>
+                  <td>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
                       </div>
-                    </td>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td><a href="#">Spam Luncheon Meat 340g Set of 12</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Noche Buena Package</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Baby Wipes 120pulls by 3 Packs</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -907,8 +968,7 @@
                 <thead class="table-primary">
                 <tr>
                   <th>Item Description</th>
-                  <th>Number of Views</th>
-                  <th>Number of Orders</th>
+                  <th>Total On-Hand</th>
                   <th>Actions</th>
                 </tr>
                 </thead>
@@ -916,60 +976,65 @@
                 <tr>
                   <td><a href="#">Pre-loved Samsung Galaxy S22</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">IPhone Charger</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Pre-loved IPhone 14 Pro</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Asus Zenbook</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">IPhone Airbuds</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -986,8 +1051,7 @@
                 <thead class="table-primary">
                 <tr>
                   <th>Item Description</th>
-                  <th>Number of Views</th>
-                  <th>Number of Orders</th>
+                  <th>Total On-Hand</th>
                   <th>Actions</th>
                 </tr>
                 </thead>
@@ -995,60 +1059,65 @@
                 <tr>
                   <td><a href="#">House Cleaning Services</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Laundry Dry Clean Services</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Car Care Home Service</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Pet Care Services</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td><a href="#">Home Massage Services</a></td>
                   <td><a href="#">#</a></td>
-                  <td><a href="#">#</a></td>
                   <td>
                     <div class="container-fluid">
-                      <a href="#" class="btn btn-primary btn-sm">Edit Details</a>
-                      <a href="#" class="btn btn-success btn-sm">Mark as Delivered</a>
-                      <a href="#" class="btn btn-danger btn-sm">Delete Listing</a>
+                      <div class="row">
+                        <div class="col border">Order x <a href="#">#</a></div>
+                        <div class="col border">Processed x <a href="#">#</a></div>
+                        <div class="col border">Delivered x <a href="#">#</a></div>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -1062,53 +1131,81 @@
       </div>
 <!------------------------------------------------------------------->
       <!--Profile-->
-      <div class="container mt-3">
-        <form id="profile">
-          <label for="full-name" class="form-label">Full Name:</label>
-          <input type="text" class="form-control" placeholder="Enter Full Name"><br>
-          <label for="store-address" class="form-label">Store Address:</label>
-          <input type="text" class="form-control" placeholder="Enter Store Address"><br>
-          <label for="email" class="form-label">Email Address:</label>
-          <input type="text" class="form-control" placeholder="Enter Email Address"><br>
-          <div class="row">
-            <div class="col">
-              <label for="mobile" class="form-label">Mobile Number:</label>
-              <input type="text" class="form-control" placeholder="Enter Number">
-            </div>
-            <div class="col">
-              <label for="viber" class="form-label">Viber Number:</label>
-              <input type="text" class="form-control" placeholder="Enter Number">
-            </div>
-          </div><br>
-          <label for="messenger" class="form-label">Facebook Messenger Link:</label>
-          <input type="text" class="form-control" placeholder="Enter Link"><br>
-          <label for="password" class="form-label">Password:</label>
-          <input type="password" class="form-control" placeholder="Enter Password" id="pswd">
-          <input type="checkbox" onclick="myFunction()">Show Password
-            <script>
-              function myFunction() {
-              var x = document.getElementById("pswd");
-              if (x.type === "password") {
-                  x.type = "text";
-                  } else {
-                  x.type = "password";
+      <div class="tab-pane container" id="myprofile"><br>
+          <div class="container mt-3">
+            <form id="profile">
+              <label for="full-name" class="form-label">Full Name:</label>
+              <input type="text" class="form-control" placeholder="Enter Full Name"><br>
+              <label for="store-address" class="form-label">Store Address:</label>
+              <input type="text" class="form-control" placeholder="Enter Store Address"><br>
+              <label for="email" class="form-label">Email Address:</label>
+              <input type="text" class="form-control" placeholder="Enter Email Address"><br>
+              <div class="row">
+                <div class="col">
+                  <label for="mobile" class="form-label">Mobile Number:</label>
+                  <input type="text" class="form-control" placeholder="Enter Number">
+                </div>
+                <div class="col">
+                  <label for="viber" class="form-label">Viber Number:</label>
+                  <input type="text" class="form-control" placeholder="Enter Number">
+                </div>
+              </div><br>
+              <label for="messenger" class="form-label">Facebook Messenger Link:</label>
+              <input type="text" class="form-control" placeholder="Enter Link"><br>
+              <label for="password" class="form-label">Password:</label>
+              <input type="password" class="form-control" placeholder="Enter Password" id="pswd">
+              <input type="checkbox" onclick="myFunction()">Show Password
+                <script>
+                  function myFunction() {
+                  var x = document.getElementById("pswd");
+                  if (x.type === "password") {
+                      x.type = "text";
+                      } else {
+                      x.type = "password";
+                    }
+                  }
+                </script>
+              <br><br>
+              <input type="button" class="btn btn-primary btn-sm" onclick="myFunction()" value="Reset">
+              <script>
+                function myFunction() {
+                  document.getElementById("profile").reset();
                 }
-              }
-            </script>
-          <br><br>
-          <input type="button" class="btn btn-primary btn-sm" onclick="myFunction()" value="Reset">
-          <script>
-            function myFunction() {
-              document.getElementById("profile").reset();
-            }
-          </script>
-          <input type="button" class="btn btn-danger btn-sm" onclick="myFunction()" value="Cancel">
-          <input type="button" class="btn btn-success btn-sm" onclick="myFunction()" value="Looking Good">
-        </form>
+              </script>
+              <input type="button" class="btn btn-danger btn-sm" onclick="myFunction()" value="Cancel">
+              <input type="button" class="btn btn-success btn-sm" onclick="myFunction()" value="Looking Good">
+            </form>
+          </div>
       </div>
 <!------------------------------------------------------------------------->
       <!--Seller's Forum-->
-            
+      <div class="tab-pane container" id="forum"><br>
+      <h2>Chat Messages</h2>
+
+        <div class="container" id="chat1">
+          <img src="chat1.jpg" alt="Avatar" style="width:100%;">
+          <p>Hello. How are you today?</p>
+          <span class="time-right">11:00</span>
+        </div>
+
+        <div class="container darker" id="chat2">
+          <img src="chat2.webp" alt="Avatar" class="right" style="width:100%;">
+          <p>Hey! I'm fine. Thanks for asking!</p>
+          <span class="time-left">11:01</span>
+        </div>
+
+        <div class="container" id="chat3">
+          <img src="chat1.jpg" alt="Avatar" style="width:100%;">
+          <p>Sweet! So, what do you wanna do today?</p>
+          <span class="time-right">11:02</span>
+        </div>
+
+        <div class="container darker" id="chat4">
+          <img src="chat2.webp" alt="Avatar" class="right" style="width:100%;">
+          <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+          <span class="time-left">11:05</span>
+        </div>
+      </div>      
     </div>  
   </div>
 </body>
