@@ -31,122 +31,118 @@
         </div>
       </nav>
       <!-- The Modal -->
-<div class="modal fade" id="WelcomeBackSeller">
+  <div class="modal fade" id="WelcomeBackSeller">
     <div class="modal-dialog">
       <div class="modal-content">
-  
         <!-- Modal Header -->
         <div class="modal-header">
           <h5 class="modal-title">Welcome Back, Seller!</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
-  
         <!-- Modal body -->
         <div class="modal-body">
-            <form class="was-validated">
+            <form class="needs-validation">
                 <div>
                     <label for="uname" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="uname" placeholder="Enter Fullname">
+                    <input type="text" class="form-control" id="uname" placeholder="Enter Fullname" required>
                     <div class="valid-feedback">Valid</div>
                     <div class="invalid-feedback">Required Field</div>
                 </div><br>
                 <div>
                     <label for="pwd" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter Password">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter Password" required>
                     <div class="valid-feedback">Valid</div>
                     <div class="invalid-feedback">Required Field</div>
                 </div><br>
                 <div class="d-grid">
-                    <a href="Seller_Page.html" class="btn btn-primary btn-block">Proceed</a>
-                  </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                      <a href="Seller_Page.html" style="color:white">Proceed</a>
+                    </button>  
+                </div>
             </form>
         </div>
-  
         <!-- Modal footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
         </div>
-  
       </div>
     </div>
   </div>
-
   <!-- The Modal -->
-<div class="modal fade" id="StartSellingWithUs">
+  <div class="modal fade" id="StartSellingWithUs">
     <div class="modal-dialog">
       <div class="modal-content">
-  
         <!-- Modal Header -->
         <div class="modal-header">
           <h5 class="modal-title">Welcome, New Seller!</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
-  
         <!-- Modal body -->
         <div class="modal-body">
-            <form class="needs-validation"novalidate>
-                <div class="form-group">
+            <form class="needs-validation">
+                <div>
                     <label for="uname" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="uname" placeholder="Enter Fullname" aria-describedby="uname" required/>
+                    <input type="text" class="form-control" id="uname" placeholder="Enter Fullname" required>
                     <div class="valid-feedback">Valid</div>
                     <div class="invalid-feedback">Required Field</div>
                 </div><br>
-                <div class="form-group">
+                <div>
                     <label for="uname" class="form-label">Store Address</label>
-                    <input type="text" class="form-control" id="storeaddress" placeholder="Enter Store Address" aria-describedby="Address" required/>
+                    <input type="text" class="form-control" id="storeaddress" placeholder="Enter Store Address" required>
                     <div class="valid-feedback">Valid</div>
                     <div class="invalid-feedback">Required Field</div>
                 </div><br>
-                <div class="form-group">
+                <div>
                     <label for="uname" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter Email Address" aria-describedby="email" required/>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email Address" required>
                     <div class="valid-feedback">Valid</div>
                     <div class="invalid-feedback">Required Field</div>
                 </div><br>
                 <div class="row">
-                    <div class="col form-group">
+                    <div class="col">
                         <label for="uname" class="form-label">Mobile Number</label>
-                      <input type="text" class="form-control" placeholder="Enter Number" name="mobile" aria-describedby="mobile" required/>
+                      <input type="text" class="form-control" placeholder="Enter Number" name="mobile" required>
                     </div>
-                    <div class="col form-group">
+                    <div class="col">
                         <label for="uname" class="form-label">Viber Number</label>
-                      <input type="text" class="form-control" placeholder="Enter Number" name="viber" aria-describedby="viber" required/>
+                      <input type="text" class="form-control" placeholder="Enter Number" name="viber" required>
                     </div>
                   </div><br>
-                  <div class="form-group">
+                  <div>
                     <label for="uname" class="form-label">Facebook Messenger Link</label>
-                    <input type="text" class="form-control" id="messenger" placeholder="Enter FB Messenger Link" aria-describedby="fbmsgrlink" required/>
+                    <input type="text" class="form-control" id="messenger" placeholder="Enter FB Messenger Link" required>
                     <div class="valid-feedback">Valid</div>
                     <div class="invalid-feedback">Required Field</div>
                 </div><br>
-                <div class="form-group">
+                <div>
                     <label for="pwd" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter Password" aria-describedby="pwd" required/>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter Password" required>
                     <div class="valid-feedback">Valid</div>
                     <div class="invalid-feedback">Required Field</div>
                 </div><br>
-                <div class="form-group">
+                <div>
                     <label for="pwd" class="form-label">Re-enter Password</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Re-enter Password" aria-describedby="pwd" required/>
+                    <input type="password" class="form-control" id="pwd" placeholder="Re-enter Password" required>
                     <div class="valid-feedback">Valid</div>
                     <div class="invalid-feedback">Required Field</div>
                 </div>
                 <br>
                 <div class="d-grid">
-                    <a href="Seller_Page.html" class="btn btn-primary btn-block">Let's Begin Selling!</a>
-                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">
+                    <a href="Seller_Page.html" style="color:white">Let's Begin Selling!</a>
+                  </button>
+                </div>
             </form>
         </div>
-  
         <!-- Modal footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
         </div>
-  
       </div>
     </div>
   </div>
-<br>
+  <br>
+<!----Selection---->
 <div class="container-fluid">
     <ul class="nav nav-tabs nav-justified">
         <li class="nav-item">
@@ -167,8 +163,7 @@
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#services">Services</a>
           </li>
-      </ul>
-      <br>
+      </ul><br>
       <!-- Tab panes -->
       <div class="tab-content">
         <div class="tab-pane container active" id="properties">
@@ -191,49 +186,344 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><a href="#">25SQM Lot Area For Sale</a></td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light text-primary" data-bs-toggle="modal" data-bs-target="#item1">25SQM Lot Area For Sale</button>
+                    <div class="modal fade" id="item1">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h5 class="modal-title">Listing Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                              <form id="prop1">
+                                  <div>
+                                      <label for="ItemDescription" class="form-label">Item Description</label>
+                                      <input type="text" class="form-control" id="ItemDescription" placeholder="Enter Item Description">
+                                  </div><br>
+                                  <div>
+                                    <label for="FullDetails" class="form-label">Full Details</label>
+                                    <input type="text" class="form-control" id="Full Details" placeholder="Enter Full Details">
+                                  </div><br>
+                                  <div class="row">
+                                    <div class="col">
+                                      <label for="amount" class="form-label">Amount:</label>
+                                      <input type="text" class="form-control" placeholder="Enter Number">
+                                    </div>
+                                    <div class="col">
+                                      <label for="Onhand" class="form-label">On-Hand Quantity:</label>
+                                      <input type="text" class="form-control" placeholder="#">                                     
+                                    </div>
+                                  </div><br>
+                                  <form>
+                                    <label for="viber" class="form-label">Upload Images:</label><br>
+                                    <input type="file" id="myFile" name="images">
+                                    <input type="submit">
+                                  </form>
+                              </form>
+                          </div>
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <input type="button" class="btn btn-primary btn-sm" onclick="myFunction()" value="Reset">
+                              <script>
+                                function myFunction() {
+                                  document.getElementById("prop1").reset();
+                                }
+                              </script>
+                              <input type="button" class="btn btn-success btn-sm" onclick="myFunction()" value="Looking Good">
+                          </div>                  
+                        </div>
+                      </div>
+                    </div>
+                  </td>
                   <td><a href="#">Image 1</a></td>
                   <td>Juan dela Cruz</td>
                   <td>Quezon City</td>
                   <td>P1,000,000</td>
                   <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                  <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                  <td>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                        <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                        <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                      </div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                    <td><a href="#">20SQM Lot Area For Sale</a></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-light text-primary" data-bs-toggle="modal" data-bs-target="#item2">20SQM Lot Area For Sale</button>
+                      <div class="modal fade" id="item2">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h5 class="modal-title">Listing Details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form id="prop2">
+                                    <div>
+                                        <label for="ItemDescription" class="form-label">Item Description</label>
+                                        <input type="text" class="form-control" id="ItemDescription" placeholder="Enter Item Description">
+                                    </div><br>
+                                    <div>
+                                      <label for="FullDetails" class="form-label">Full Details</label>
+                                      <input type="text" class="form-control" id="Full Details" placeholder="Enter Full Details">
+                                    </div><br>
+                                    <div class="row">
+                                      <div class="col">
+                                        <label for="amount" class="form-label">Amount:</label>
+                                        <input type="text" class="form-control" placeholder="Enter Number">
+                                      </div>
+                                      <div class="col">
+                                        <label for="Onhand" class="form-label">On-Hand Quantity:</label>
+                                        <input type="text" class="form-control" placeholder="#">                                     
+                                      </div>
+                                    </div><br>
+                                    <form>
+                                      <label for="viber" class="form-label">Upload Images:</label><br>
+                                      <input type="file" id="myFile" name="images">
+                                      <input type="submit">
+                                    </form>
+                                </form>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <input type="button" class="btn btn-primary btn-sm" onclick="myFunction()" value="Reset">
+                                <script>
+                                  function myFunction() {
+                                    document.getElementById("prop2").reset();
+                                  }
+                                </script>
+                                <input type="button" class="btn btn-success btn-sm" onclick="myFunction()" value="Looking Good">
+                            </div>                  
+                          </div>
+                        </div>
+                      </div>
+                    </td>
                     <td><a href="#">Image 2</a></td>
                     <td>Topacio Mamaril</td>
                     <td>Makati City</td>
                     <td>P2,000,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
-                    <td><a href="#">45SQM House and Lot For Sale</a></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-light text-primary" data-bs-toggle="modal" data-bs-target="#item3">45SQM House and Lot For Sale</button>
+                      <div class="modal fade" id="item3">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h5 class="modal-title">Listing Details</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form id="prop3">
+                                    <div>
+                                        <label for="ItemDescription" class="form-label">Item Description</label>
+                                        <input type="text" class="form-control" id="ItemDescription" placeholder="Enter Item Description">
+                                    </div><br>
+                                    <div>
+                                      <label for="FullDetails" class="form-label">Full Details</label>
+                                      <input type="text" class="form-control" id="Full Details" placeholder="Enter Full Details">
+                                    </div><br>
+                                    <div class="row">
+                                      <div class="col">
+                                        <label for="amount" class="form-label">Amount:</label>
+                                        <input type="text" class="form-control" placeholder="Enter Number">
+                                      </div>
+                                      <div class="col">
+                                        <label for="Onhand" class="form-label">On-Hand Quantity:</label>
+                                        <input type="text" class="form-control" placeholder="#">                                     
+                                      </div>
+                                    </div><br>
+                                    <form>
+                                      <label for="viber" class="form-label">Upload Images:</label><br>
+                                      <input type="file" id="myFile" name="images">
+                                      <input type="submit">
+                                    </form>
+                                </form>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <input type="button" class="btn btn-primary btn-sm" onclick="myFunction()" value="Reset">
+                                <script>
+                                  function myFunction() {
+                                    document.getElementById("prop3").reset();
+                                  }
+                                </script>
+                                <input type="button" class="btn btn-success btn-sm" onclick="myFunction()" value="Looking Good">
+                            </div>                  
+                          </div>
+                        </div>
+                      </div>
+                    </td>
                     <td><a href="#">Image 3</a></td>
                     <td>Juan Lakarin</td>
                     <td>Calapan City</td>
                     <td>P5,000,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
-                    <td><a href="#">15SQM Lot Area For Sale</a></td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light text-primary" data-bs-toggle="modal" data-bs-target="#item4">15SQM Lot Area For Sale</button>
+                    <div class="modal fade" id="item4">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h5 class="modal-title">Listing Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                              <form id="prop4">
+                                  <div>
+                                      <label for="ItemDescription" class="form-label">Item Description</label>
+                                      <input type="text" class="form-control" id="ItemDescription" placeholder="Enter Item Description">
+                                  </div><br>
+                                  <div>
+                                    <label for="FullDetails" class="form-label">Full Details</label>
+                                    <input type="text" class="form-control" id="Full Details" placeholder="Enter Full Details">
+                                  </div><br>
+                                  <div class="row">
+                                    <div class="col">
+                                      <label for="amount" class="form-label">Amount:</label>
+                                      <input type="text" class="form-control" placeholder="Enter Number">
+                                    </div>
+                                    <div class="col">
+                                      <label for="Onhand" class="form-label">On-Hand Quantity:</label>
+                                      <input type="text" class="form-control" placeholder="#">                                     
+                                    </div>
+                                  </div><br>
+                                  <form>
+                                    <label for="viber" class="form-label">Upload Images:</label><br>
+                                    <input type="file" id="myFile" name="images">
+                                    <input type="submit">
+                                  </form>
+                              </form>
+                          </div>
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <input type="button" class="btn btn-primary btn-sm" onclick="myFunction()" value="Reset">
+                              <script>
+                                function myFunction() {
+                                  document.getElementById("prop4").reset();
+                                }
+                              </script>
+                              <input type="button" class="btn btn-success btn-sm" onclick="myFunction()" value="Looking Good">
+                          </div>                  
+                        </div>
+                      </div>
+                    </div>
+                  </td>
                     <td><a href="#">Image 4</a></td>
                     <td>Restituto Fruto</td>
                     <td>Manila City</td>
                     <td>P800,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
-                    <td><a href="#">42SQM House and Lot For Sale</a></td>
+                  <td>
+                    <button type="button" class="btn btn-outline-light text-primary" data-bs-toggle="modal" data-bs-target="#item5">42SQM House and Lot For Sale</button>
+                    <div class="modal fade" id="item5">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h5 class="modal-title">Listing Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                              <form id="prop5">
+                                  <div>
+                                      <label for="ItemDescription" class="form-label">Item Description</label>
+                                      <input type="text" class="form-control" id="ItemDescription" placeholder="Enter Item Description">
+                                  </div><br>
+                                  <div>
+                                    <label for="FullDetails" class="form-label">Full Details</label>
+                                    <input type="text" class="form-control" id="Full Details" placeholder="Enter Full Details">
+                                  </div><br>
+                                  <div class="row">
+                                    <div class="col">
+                                      <label for="amount" class="form-label">Amount:</label>
+                                      <input type="text" class="form-control" placeholder="Enter Number">
+                                    </div>
+                                    <div class="col">
+                                      <label for="Onhand" class="form-label">On-Hand Quantity:</label>
+                                      <input type="text" class="form-control" placeholder="#">                                     
+                                    </div>
+                                  </div><br>
+                                  <form>
+                                    <label for="viber" class="form-label">Upload Images:</label><br>
+                                    <input type="file" id="myFile" name="images">
+                                    <input type="submit">
+                                  </form>
+                              </form>
+                          </div>
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <input type="button" class="btn btn-primary btn-sm" onclick="myFunction()" value="Reset">
+                              <script>
+                                function myFunction() {
+                                  document.getElementById("prop5").reset();
+                                }
+                              </script>
+                              <input type="button" class="btn btn-success btn-sm" onclick="myFunction()" value="Looking Good">
+                          </div>                  
+                        </div>
+                      </div>
+                    </div>
+                  </td>
                     <td><a href="#">Image 5</a></td>
                     <td>Dennis Lolong</td>
                     <td>Valenzuela City</td>
                     <td>P6,000,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
               </tbody>
             </table>
@@ -266,7 +556,15 @@
                   <td>Pasay City</td>
                   <td>P500,000</td>
                   <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                  <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                  <td>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                        <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                        <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                      </div>
+                    </div>  
+                  </td>
                 </tr>
                 <tr>
                     <td><a href="#">Toyota Fortuner V</a></td>
@@ -275,7 +573,15 @@
                     <td>Makati City</td>
                     <td>P1,200,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">BMW 318i</a></td>
@@ -284,7 +590,15 @@
                     <td>Legaspi City</td>
                     <td>P2,500,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Hyundai Starex</a></td>
@@ -293,7 +607,15 @@
                     <td>Manila City</td>
                     <td>P550,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Nissan Almera</a></td>
@@ -302,7 +624,15 @@
                     <td>Quezon City</td>
                     <td>P300,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
               </tbody>
             </table>
@@ -335,7 +665,15 @@
                   <td>Pasay City</td>
                   <td>P3,000</td>
                   <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                  <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                  <td>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                        <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                        <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                      </div>
+                    </div>  
+                  </td>
                 </tr>
                 <tr>
                     <td><a href="#">Pre-loved Zara Sandals</a></td>
@@ -344,7 +682,15 @@
                     <td>Makati City</td>
                     <td>P1,200</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Pre-loved Used Once Tory Burch Dress</a></td>
@@ -353,7 +699,15 @@
                     <td>Legaspi City</td>
                     <td>P10,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Used Once True Religion 20th Ricky Vintage</a></td>
@@ -362,7 +716,15 @@
                     <td>Manila City</td>
                     <td>P18,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Never Used Parfois Women's Long Basic Plain Purse</a></td>
@@ -371,7 +733,15 @@
                     <td>Quezon City</td>
                     <td>P1,500</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
               </tbody>
             </table>
@@ -404,7 +774,15 @@
                   <td>Quezon City</td>
                   <td>P1,500</td>
                   <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                  <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                  <td>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                        <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                        <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                      </div>
+                    </div>  
+                  </td>
                 </tr>
                 <tr>
                     <td><a href="#">Pedigree 25kg</a></td>
@@ -413,7 +791,15 @@
                     <td>Makati City</td>
                     <td>P2,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Spam Luncheon Meat 340g Set of 12</a></td>
@@ -422,7 +808,15 @@
                     <td>Pasay City</td>
                     <td>P3,200</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Noche Buena Package</a></td>
@@ -431,7 +825,15 @@
                     <td>Manila City</td>
                     <td>P1,500</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Baby Wipes 120pulls by 3 Packs</a></td>
@@ -440,7 +842,15 @@
                     <td>Marikina City</td>
                     <td>P200</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
               </tbody>
             </table>
@@ -473,7 +883,15 @@
                   <td>San Juan City</td>
                   <td>P20,000</td>
                   <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                  <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                  <td>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                        <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                        <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                      </div>
+                    </div>  
+                  </td>
                 </tr>
                 <tr>
                     <td><a href="#">IPhone Charger</a></td>
@@ -482,7 +900,15 @@
                     <td>Makati City</td>
                     <td>P1,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Pre-loved IPhone 14 Pro</a></td>
@@ -491,7 +917,15 @@
                     <td>Davao City</td>
                     <td>P50,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Asus Zenbook</a></td>
@@ -500,7 +934,15 @@
                     <td>Manila City</td>
                     <td>P150,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">IPhone Airbuds</a></td>
@@ -509,7 +951,15 @@
                     <td>Mandaluyong City</td>
                     <td>P2,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
               </tbody>
             </table>
@@ -542,7 +992,15 @@
                   <td>Quezon City</td>
                   <td>P2,000</td>
                   <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                  <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                  <td>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                        <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                        <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                      </div>
+                    </div>  
+                  </td>
                 </tr>
                 <tr>
                     <td><a href="#">Laundry Dry Clean Services</a></td>
@@ -551,7 +1009,15 @@
                     <td>Makati City</td>
                     <td>P250</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Car Care Home Service</a></td>
@@ -560,7 +1026,15 @@
                     <td>Paranaque City</td>
                     <td>P2,500</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Pet Care Services</a></td>
@@ -569,7 +1043,15 @@
                     <td>Cavite City</td>
                     <td>P1,000</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="#">Home Massage Services</a></td>
@@ -578,7 +1060,15 @@
                     <td>Malabon City</td>
                     <td>P500</td>
                     <td><a href="#" class="btn btn-primary btn-sm">Save</a></td>
-                    <td><a href="#"><img src="FBMSGR.jpg" width="30" m-2><img src="VIBER.jpg" width="30" m-2><img src="CALL.jpg" width="30" m-2></a></td>
+                    <td>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col"><a href="#"><img src="FBMSGR.jpg" alt="fbmsgr" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="VIBER.jpg" alt="viber" width="30" m-2></a></div>
+                          <div class="col"><a href="#"><img src="CALL.jpg" alt="call" width="30" m-2></a></div>
+                        </div>
+                      </div>  
+                    </td>
                 </tr>
               </tbody>
             </table>
